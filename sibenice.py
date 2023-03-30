@@ -1,6 +1,14 @@
 #Tady bude generování oběšenýho týpka :)
 
-obesenec = ['''
+obesenec = [
+    '''
+    
+
+      ===
+    '''
+    
+    
+    '''
    +---+
        |
        |
