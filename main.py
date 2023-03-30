@@ -11,6 +11,7 @@ for letter in slovos:
 
 delka= len(slovos)
 chyba=0
+scan=0
 poprava=sibenice.obesenec[chyba]
 
 while(chyba!= delka):
@@ -19,7 +20,10 @@ while(chyba!= delka):
     for i in hadanka:
             
         if (i != pismeno):
-           chyba=chyba+1
+           scan=scan+1
+           if (scan>delka):
+               chyba=chyba+1
+        print(chyba)
     print(poprava)
             
     
