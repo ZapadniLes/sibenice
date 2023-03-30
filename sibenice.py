@@ -1,7 +1,5 @@
 #Tady bude generování oběšenýho týpka :)
 
-import main
-
 obesenec = ['''
    +---+
        |
