@@ -10,20 +10,21 @@ for letter in slovos:
     hadanka.append(letter)
 
 delka= len(slovos)
+print(delka)
 chyba=0
 scan=0
-poprava=sibenice.obesenec[chyba]
 
 while(chyba!= delka):
-
+    poprava=sibenice.obesenec[chyba]
     pismeno = input("Jaké písmeno hádáš: ")
     for i in hadanka:
             
         if (i != pismeno):
            scan=scan+1
+
            if (scan>delka):
                chyba=chyba+1
-        print(chyba)
+    print(chyba)
     print(poprava)
             
     
