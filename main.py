@@ -19,7 +19,8 @@ while(chyba != 7):
     poprava=sibenice.obesenec[chyba]
     pismeno = input("Jaké písmeno hádáš: ")
     for i in slovos:
-            
+
+        odpovedi=odpovedi+pismeno        
         if i in odpovedi:
            #scan= scan+1
            print(i, end="")
@@ -30,7 +31,7 @@ while(chyba != 7):
     if scan ==0:
         break
 
-    odpovedi=odpovedi+pismeno
+    
 
     if pismeno not in slovos:
         chyba=chyba+1
