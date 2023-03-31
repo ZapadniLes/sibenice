@@ -1,35 +1,48 @@
 import random
 import sibenice
-hadanka=[]
 with open("./slova.txt", "r", encoding="utf8") as file:
     slova = file.read().splitlines()
 
-slovos = random.choice(slova)
-
-for letter in slovos:
-    hadanka.append(letter)
+slovos = str(random.choice(slova))
 
 delka= len(slovos)
 print(delka)
 chyba=0
-scan=0
+odpovedi=""
 
-while(chyba!= delka):
+
+print(slovos)
+#print(hadanka)
+
+while(chyba != 7):
     scan=0
     poprava=sibenice.obesenec[chyba]
     pismeno = input("Jaké písmeno hádáš: ")
-    for i in hadanka:
+    for i in slovos:
             
-        if (i != pismeno):
-           scan=scan+1
+        if i in odpovedi:
+           #scan= scan+1
+           print(i, end="")
+        else:
+            print("_", end="")
+            scan = scan+1
 
-    if (scan>0):
+    if scan ==0:
+        break
+
+    odpovedi=odpovedi+pismeno
+
+    if pismeno not in slovos:
         chyba=chyba+1
-    print(chyba)
+
+
+
+    """if (scan>0):
+        chyba=chyba+1"""
+
+
+
+    print("\n", "počet chyb: ", chyba)
     print(poprava)
-            
-    
-
-
 
 
