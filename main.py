@@ -12,7 +12,7 @@ chyba=0
 odpovedi=""
 
 
-print(slovos)
+#print(slovos)
 #print(hadanka)
 
 while(chyba != 8):
